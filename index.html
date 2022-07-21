@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramtirthe.in</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="dark-mode">
+    <header>
+        <div class="logo">
+            <h1 data-heading="RohitRamtirthe.com ">RohitRamtirthe.com </h1>
+            <div class="console-container" >
+                <span id="text">Learn Software Development</span>
+                <div class="console-underscore" id="console">&#124;</div>
+            </div>
+            <div class="header-menu">
+                <div><a href="#" target="_self">Home</a></div>
+                <div><a href="#" target="_self">Courses</a></div>
+                <div><a href="#" target="_self">Contact</a></div>
+                <div><a href="#" target="_self">About us</a></div>
+            </div>
+        </div>
+    </header>
+    <hr style="border: solid 1px blue; margin: 0px;">
+    <nav>
+        <ul>
+            <li> <a href="javascript:showCourse('courses/HTML/start.html');" class="active"> HTML </a> </li>
+            <li> <a href="#"> CSS </a> </li>
+            <li> <a href="#"> JavaScript </a> </li>
+            <li> <a href="#"> Java </a> </li>
+            <li> <a href="#"> AWS </a> </li>
+            <li> <a href="#"> Spring Boot </a> </li>
+            <li> <a href="#"> MySQL </a> </li>
+            <li> <a href="#"> MongoDB </a> </li>
+            <li> <a href="#"> Couchbase </a> </li>
+
+        </ul>
+    </nav>
+    <div id="courseContent">
+        <iframe style="height: calc(100vh - 119px); width: 100%; " src="courses/HTML/start.html" frameborder="0"></iframe>
+    </div>
+    <footer></footer>
+</body>
+    <script src="js/header.js"></script>
+    <script>
+        function showCourse(path){
+            document.getElementById("courseContent").innerHTML = " <h1>path"+ path+"</h1>";
+        }
+    </script>
+   
+</html>
